@@ -280,7 +280,7 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .header__theme-menu {
     justify-self: end;
-    align-self: center;
+    align-self: end;
   }
   .header__theme-menu-list {
     flex-direction: column;
@@ -312,7 +312,7 @@
   }
   .header__theme-menu {
     justify-self: end;
-    align-self: center;
+    align-self: end;
   }
   .header__theme-menu-list {
     flex-direction: column;
@@ -347,5 +347,22 @@
   .section-images-list {
     display: flex;
     flex-direction: column;
+  }
+  .decoration-border::before {
+    top: 10px;
+    right: 10px;
+  }
+
+  .second-decoration-border::before {
+    bottom: 10px;
+    left: 10px;
+  }
+  .decoration-text::before {
+    right: 38px;
+    top: 10px;
+  }
+  .decoration-point::before {
+    top: 18px;
+    right: 18px;
   }
 }
