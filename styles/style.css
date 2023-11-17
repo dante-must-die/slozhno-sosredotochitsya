@@ -67,7 +67,8 @@
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
-  justify-self: center;
+  align-self: center;
+  justify-self: end;
 }
 
 .decoration-border::before {
@@ -283,7 +284,7 @@
   .preview-text {
     align-self: center;
   }
-
+  
   .header__theme-menu {
     justify-self: end;
     align-self: center;
