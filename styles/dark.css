@@ -4,9 +4,67 @@
   переключая тему
 */
 
+:root .theme_dark {
+  --title-decor: #ff0070;
+  --text-color: #000028;
+  --header-nav: #ff0070;
+  --title-color: #ff0070;
+  --decoration-text-color: #ff0070;
+  --section-text-color: #f1b2ce;
+  --bg-color: #000028;
+}
+
 .page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  background-color: var(--bg-color);
+  background-image: url("/images/cover-image-dark.png");
+}
+
+.theme_dark .decoration-border::before {
+  position: absolute;
+  content: "";
+  top: 20px;
+  right: 20px;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid #ff0070;
+  border-right: 1px solid #ff0070;
+}
+
+.theme_dark .second-decoration-border::before {
+  position: absolute;
+  content: "";
+  bottom: 20px;
+  left: 20px;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid #ff0070;
+  border-left: 1px solid #ff0070;
+}
+
+.theme_dark .decoration-text::before {
+  position: absolute;
+  content: "REC";
+  right: 48px;
+  top: 20px;
+  width: 33px;
+  height: 26px;
+  color: var(--decoration-text-color);
+  text-align: center;
+  font-family: var(--page-font-family);
+  font-size: var(--main-font-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 138.889% */
+}
+
+.theme_dark .decoration-point::before {
+  position: absolute;
+  content: "";
+  height: 9px;
+  width: 9px;
+  top: 28px;
+  right: 28px;
+  background-color: #ff0070;
+  border-radius: 50%;
+  filter: drop-shadow(0px 0px 4px #ff0070);
 }

@@ -4,9 +4,91 @@
   переключая тему
 */
 
+:root .theme_light {
+  --bg-color: #fff1f7;
+  --title-decor: #ff8dcb;
+  --text-color: #353430;
+  --header-nav: #353430;
+  --title-color: #ff8dcb;
+  --title-color: #353430;
+  --section-text-color: #353430;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: #fff1f7;
+    --title-decor: #ff8dcb;
+    --text-color: #353430;
+    --header-nav: #353430;
+    --title-color: #ff8dcb;
+    --title-color: #353430;
+    --section-text-color: #353430;
+  }
+  .page.theme_auto {
+    background-color: var(--bg-color);
+    background-image: url("/images/cover-image-light.png");
+  }
+  .theme_auto .header__theme-menu-button_active {
+    pointer-events: none;
+    border: 1px solid #353430;
+  }
+
+  .theme_auto .preview-text {
+    color: #ffc2e6;
+  }
+
+  .theme_auto .decoration-border::before {
+    border-top: 1px solid #353430;
+    border-right: 1px solid #353430;
+  }
+
+  .theme_auto .second-decoration-border::before {
+    border-bottom: 1px solid #353430;
+    border-left: 1px solid #353430;
+  }
+
+  .theme_auto .decoration-text::before {
+    display: none;
+  }
+  .theme_auto .decoration-point::before {
+    display: none;
+  }
+
+  .theme_auto .footer-title {
+    color: #ffc2e6;
+  }
+}
+
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  background-color: var(--bg-color);
+  background-image: url("/images/cover-image-light.png");
+}
+.theme_light .header__theme-menu-button_active {
+  pointer-events: none;
+  border: 1px solid #353430;
+}
+
+.theme_light .preview-text {
+  color: #ffc2e6;
+}
+
+.theme_light .decoration-border::before {
+  border-top: 1px solid #353430;
+  border-right: 1px solid #353430;
+}
+
+.theme_light .second-decoration-border::before {
+  border-bottom: 1px solid #353430;
+  border-left: 1px solid #353430;
+}
+
+.theme_light .decoration-text::before {
+  display: none;
+}
+.theme_light .decoration-point::before {
+  display: none;
+}
+
+.theme_light .footer-title {
+  color: #ffc2e6;
 }
